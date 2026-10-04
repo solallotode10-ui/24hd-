@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24H D+ Meucon | Projet Performance</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-deep: #000000;
+            --accent-orange: #ff5500;
+        }
+
+        body {
+            background-color: var(--bg-deep);
+            color: #ededed;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Gestion de fond.jpg ou fond.png avec filtre noir intense */
+        .bg-custom-hero {
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.98)),
+                url('fond.jpg'), 
+                url('fond.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .bg-custom-section {
+            background-image: 
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.95), rgba(5, 5, 5, 0.95)),
+                url('fond.jpg'), 
+                url('fond.png');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .text-accent {
+            color: var(--accent-orange);
+        }
+
+        .bg-accent {
+            background-color: var(--accent-orange);
+        }
+
+        .border-accent {
+            border-color: var(--accent-orange);
+        }
+
+        .card-minimal {
+            background: rgba(10, 10, 10, 0.9);
+            border: 1px solid rgba(255, 85, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="selection:bg-[#ff5500] selection:text-black">
+
+    <section class="relative min-h-screen flex items-center justify-center bg-custom-hero px-4 py-20">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 mb-6 border border-[#ff5500]/40 rounded-full text-xs font-mono tracking-widest uppercase text-[#ff5500]">
+                Meucon • Près de Carnac • Projet Extrême
+            </div>
+            
+            <h1 class="text-5xl sm:text-7xl md:text-8xl font-black uppercase tracking-tight text-white mb-6">
+                24H D+ <span class="text-accent">MEUCON</span>
+            </h1>
+
+            <p class="text-lg sm:text-2xl text-gray-300 font-light max-w-2xl mx-auto mb-10 leading-relaxed">
+                Le défi d'endurance absolu imaginé par <strong class="text-white font-semibold">Papa</strong>. 24 heures de combat contre la pente avec 20 athlètes d'exception.
+            </p>
+
+            <div>
+                <a href="#projet" class="inline-flex items-center gap-3 px-8 py-4 bg-accent hover:bg-orange-600 text-black font-extrabold uppercase text-xs tracking-widest rounded-lg transition-all shadow-lg shadow-orange-600/20">
+                    Regardez le projet <i class="fa-solid fa-arrow-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projet" class="py-28 bg-custom-section border-t border-white/10">
+        <div class="max-w-4xl mx-auto px-4">
+            
+            <div class="mb-20">
+                <span class="text-xs font-mono uppercase text-accent tracking-widest block mb-2">01. La Vision</span>
+                <h2 class="text-3xl sm:text-5xl font-black uppercase text-white mb-6">Pourquoi ce projet est une performance pure</h2>
+                <div class="space-y-6 text-gray-300 text-base sm:text-lg font-light leading-relaxed">
+                    <p>
+                        Loin des courses chronométrées classiques, ce projet né de la volonté de mon père est une quête de dépassement personnel et collectif. Sur une colline technique située à <strong class="text-white">Meucon</strong>, aux portes de Carnac et de Vannes, l'objectif est simple mais brutal : enchaîner les boucles de dénivelé positif sans s'arrêter pendant 24 heures complètes.
+                    </p>
+                    <p>
+                        Il ne s'agit pas d'aller vite, mais de durer. De tenir quand le corps dit stop, quand la nuit tombe sur les sentiers bretons et que l'esprit commence à douter.
+                    </p>
+                </div>
+            </div>
+
+            <!-- The 20 Participants -->
+            <div class="mb-20 card-minimal p-8 sm:p-12 rounded-2xl">
+                <span class="text-xs font-mono uppercase text-accent tracking-widest block mb-2">02. Le Peloton Restreint</span>
+                <h3 class="text-2xl sm:text-4xl font-black uppercase text-white mb-4">20 Participants Engagés</h3>
+                <p class="text-gray-300 text-base font-light mb-6">
+                    Pas de foule anonyme. Seulement <strong class="text-white">20 athlètes</strong> triés sur le volet, réunis par la même passion de l'effort et du sacrifice. Chacun partage cette même vision de la performance brute, emmenés par l'organisateur.
+                </p>
+                </div>
+            </div>
+
+            <!-- The Hill & 24 Hours Elevation -->
+            <div class="mb-20">
+                <span class="text-xs font-mono uppercase text-accent tracking-widest block mb-2">03. Le Terrain & Le Dénivelé</span>
+                <h3 class="text-2xl sm:text-4xl font-black uppercase text-white mb-6">La Colline de Meucon</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="card-minimal p-6 rounded-xl">
+                        <h4 class="font-bold text-white uppercase text-sm mb-2 text-accent"><i class="fa-solid fa-mountain mr-2"></i> Une Pente Exigeante</h4>
+                        <p class="text-sm text-gray-400 font-light">Des portions raides en sous-bois qui cassent les jambes tour après tour, rendant chaque ascension plus difficile que la précédente.</p>
+                    </div>
+                    <div class="card-minimal p-6 rounded-xl">
+                        <h4 class="font-bold text-white uppercase text-sm mb-2 text-accent"><i class="fa-solid fa-clock mr-2"></i> 24 Heures Non-Stop</h4>
+                        <p class="text-sm text-gray-400 font-light">Le jour, la nuit, la fatigue accumulée, les températures changeantes de la Bretagne : l'épreuve teste l'organisme dans ses retranchements totaux.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mental & Suffering -->
+            <div class="card-minimal p-8 sm:p-12 rounded-2xl border-l-4 border-accent">
+                <span class="text-xs font-mono uppercase text-accent tracking-widest block mb-2">04. L'Épreuve Mentale</span>
+                <h3 class="text-2xl sm:text-4xl font-black uppercase text-white mb-4">Gérer la Souffrance</h3>
+                <p class="text-gray-300 text-base font-light leading-relaxed">
+                    À ce niveau, les jambes ne font plus tout. C'est le mental qui prend le relais. Quand les heures s'enchaînent au milieu de la nuit, que le sommeil pèse sur les paupières et que chaque fibre musculaire crie la douleur, seule la force de caractère et l'émulation collective permettent de continuer à avancer vers le sommet.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="py-24 bg-black border-t border-white/10 text-center px-4">
+        <div class="max-w-xl mx-auto">
+            <span class="text-xs font-mono uppercase text-accent tracking-widest block mb-2">Contact & Suivi</span>
+            <h2 class="text-3xl sm:text-4xl font-black uppercase text-white mb-4">Restez informés du projet</h2>
+            <p class="text-gray-400 text-sm font-light mb-10">
+                Vous souhaitez contacter l'organisation ou suivre l'entraînement et la progression en direct ? Retrouvez tous les liens ci-dessous.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/finval.outdoor?stkn=aDZmMmNrcmhvbTl6" target="_blank" class="px-6 py-3.5 card-minimal hover:border-accent text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-instagram text-accent text-lg"></i> Profil Instagram
+                </a>
+
+                <!-- Strava Link -->
+                <a href="https://strava.app.link/lUrSGq2PX6b" target="_blank" class="px-6 py-3.5 card-minimal hover:border-accent text-white font-bold text-xs uppercase tracking-widest rounded-xl transition-all flex items-center justify-center gap-3">
+                    <i class="fa-brands fa-strava text-accent text-lg"></i> Profil Strava
+                </a>
+
+            </div>
+
+            <!-- Contactez-moi section -->
+            <div class="p-6 card-minimal rounded-2xl text-left">
+                <h3 class="text-sm font-bold uppercase text-white mb-2"><i class="fa-solid fa-envelope text-accent mr-2"></i> Contactez-moi</h3>
+                <p class="text-xs text-gray-400 mb-4 font-light">Pour toute question sur le projet ou l'événement à Meucon :</p>
+                <a href="mailto:finvaloutdoor@gmail.com" class="text-xs font-mono text-accent hover:underline block font-bold">finvaloutdoor@gmail.com</a>
+            </div>
+
+            <div class="mt-16 text-[11px] font-mono text-gray-600">
+                © 2026 24H D+ Meucon • Conçu pour le projet de Benjamin Lotodé
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
