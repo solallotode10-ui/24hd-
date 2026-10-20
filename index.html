@@ -78,6 +78,16 @@ footer{padding:96px 0 48px;border-top:1px solid var(--line);background:#000}
 .mail{color:var(--accent);font-weight:600;text-decoration:none}
 .mail:hover{text-decoration:underline}
 .copy{margin-top:64px;color:#666;font-size:.75rem}
+.legal{margin-top:56px;border-top:1px solid var(--line)}
+.legal details{border-bottom:1px solid var(--line)}
+.legal summary{cursor:pointer;list-style:none;padding:18px 0;font-family:'Barlow Condensed',sans-serif;font-weight:800;text-transform:uppercase;font-size:1.2rem;color:#fff;display:flex;justify-content:space-between;align-items:center}
+.legal summary::-webkit-details-marker{display:none}
+.legal summary::after{content:"+";color:var(--accent);font-size:1.5rem;line-height:1}
+.legal details[open] summary::after{content:"−"}
+.legal .body{padding:0 0 22px;color:#a9a9a9;font-weight:300;font-size:.95rem}
+.legal .body p+p{margin-top:10px}
+.legal .body strong{color:#fff;font-weight:600}
+
 </style>
 </head>
 <body>
@@ -148,6 +158,38 @@ footer{padding:96px 0 48px;border-top:1px solid var(--line);background:#000}
       <a class="link" href="https://strava.app.link/lUrSGq2PX6b" target="_blank" rel="noopener"><svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="12" fill="#FC4C02"/><path transform="translate(9.6 9.6) scale(1.2)" fill="#fff" d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169"/></svg> Strava</a>
     </div>
     <p class="lead">Une question sur l'événement ? <a class="mail" href="mailto:finvaloutdoor@gmail.com">finvaloutdoor@gmail.com</a></p>
+    <div class="legal">
+      <details>
+        <summary>Conditions de participation</summary>
+        <div class="body">
+          <p>La participation est réservée aux 20 athlètes invités. Chaque participant déclare être médicalement apte à un effort d'endurance prolongé en conditions difficiles (nuit, froid, pente).</p>
+          <p>Chaque participant évolue sous sa seule responsabilité et doit disposer d'une assurance couvrant la pratique de la course à pied en milieu naturel.</p>
+          <p>L'organisateur peut modifier le parcours ou arrêter l'épreuve en cas de conditions météo ou de sécurité dangereuses.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Images et droits</summary>
+        <div class="body">
+          <p>Les photos et vidéos de l'événement peuvent être publiées sur les réseaux sociaux du projet. Toute demande de retrait peut être adressée à l'adresse de contact ci-dessous.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Données personnelles</summary>
+        <div class="body">
+          <p>Les informations transmises par e-mail ne servent qu'à répondre à votre demande. Elles ne sont ni revendues ni transmises à des tiers. Vous pouvez demander leur accès, leur modification ou leur suppression en écrivant à l'adresse de contact.</p>
+        </div>
+      </details>
+      <details>
+        <summary>Mentions légales</summary>
+        <div class="body">
+          <p><strong>Éditeur du site :</strong> projet 24H D+ Meucon, porté par Benjamin Lotodé.</p>
+          <p><strong>Hébergement :</strong> GitHub Pages, service fourni par GitHub, Inc. (San Francisco, États-Unis).</p>
+          <p><strong>Absence de partenariat :</strong> ce site n'est pas une collaboration et n'est ni affilié, ni sponsorisé, ni approuvé par GitHub, Strava, Instagram ou Meta. Les liens vers ces plateformes sont fournis à titre informatif.</p>
+          <p><strong>Contact :</strong> finvaloutdoor@gmail.com</p>
+        </div>
+      </details>
+    </div>
+
     <p class="copy">© 2026 24H D+ Meucon · Conçu pour le projet de Benjamin Lotodé</p>
   </div>
 </footer>
@@ -171,5 +213,5 @@ footer{padding:96px 0 48px;border-top:1px solid var(--line);background:#000}
 })();
 </script>
 </body>
-                                                                                                                                                                                              </html>
-                                                                                                                                                                                              
+ </html>
+ 
